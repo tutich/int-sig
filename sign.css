@@ -1,0 +1,59 @@
+html {
+    font-size: 16px;
+}
+body {
+    background: url(images/bg-intro-desktop.png);
+    background-color: hsl(0, 100%, 74%);
+}
+.container {
+    display: flex;
+    justify-content: space-around;
+    margin: 10rem;
+    padding: 2rem;
+    
+}
+.content {
+    background: #f1f5f9;
+    padding: 3rem;
+    text-align: center;
+    border-radius: 5px;
+}
+.cont {
+    align-items: center;
+}
+.items {
+height: 40rem;
+margin-top: -4rem;
+}
+input {
+    padding: 1rem;
+    border-radius: 5px;
+    width: 250px;
+}
+button {
+    background: hsl(154, 59%, 51%);
+    text-align: center;
+    height: 50px;
+    width: 350px;
+    padding: 5px;
+    border-radius: 5px;
+    color: #f1f5f7;
+}
+.free {
+    background: hsl(248, 32%, 49%);
+    height:  50px;
+    width: 200;
+    border-radius: 5px;
+    text-align: center;
+    padding-top: 1.5rem;
+    color: #f1f5f7;
+}
+.click {
+    color: hsl(246, 25%, 77%);
+}
+.para {
+    color: hsl(0, 100%, 74%) ;
+}
+p, h1 {
+    color: #f1f5f7;
+}
