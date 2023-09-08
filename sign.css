@@ -1,59 +1,88 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+  }
+
 html {
-    font-size: 16px;
-}
-body {
     background: url(images/bg-intro-desktop.png);
     background-color: hsl(0, 100%, 74%);
-}
-.container {
-    display: flex;
-    justify-content: space-around;
-    margin: 10rem;
-    padding: 2rem;
+    text-align: center;
+    color: #f1f1f1;
+    
     
 }
-.content {
-    background: #f1f5f9;
-    padding: 3rem;
-    text-align: center;
-    border-radius: 5px;
-}
-.cont {
+body {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
+    min-height: 100vh;
+    gap: 2rem;
 }
-.items {
-height: 40rem;
-margin-top: -4rem;
+h1 {
+    font-size: 60px;
+    font-weight: 700;
+}
+h3 {
+    font-weight: 400;
+    color: rgba(255, 255, 255, 0.753);
+    font-size: 1.15em;
+}
+h2 {
+background-color: hsl(248, 32%, 49%);
+font-size: 1em;
+padding: 1em 3em;
+color: #f1f1f1;
+border-radius: 10px;
+font-weight: 400;
+box-shadow: 0rem 0.3rem 0rem rgba(0, 0, 0, 0.131);
+}
+.card {
+    background: white;
+    padding: 2rem;
+    margin-top: 1.5rem;
+    border-radius: 10px;
+    
+}
+.input-div {
+    width: 100%;
+    padding: 1rem;
+}
+form {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    gap: 1rem;
+    border-radius: 5px;
 }
 input {
+    width: 100%;
     padding: 1rem;
-    border-radius: 5px;
-    width: 250px;
+border-color: #f1f1f1;
 }
-button {
-    background: hsl(154, 59%, 51%);
-    text-align: center;
-    height: 50px;
-    width: 350px;
-    padding: 5px;
-    border-radius: 5px;
-    color: #f1f5f7;
+
+.msg {
+    color: red;
 }
-.free {
-    background: hsl(248, 32%, 49%);
-    height:  50px;
-    width: 200;
-    border-radius: 5px;
-    text-align: center;
-    padding-top: 1.5rem;
-    color: #f1f5f7;
-}
-.click {
-    color: hsl(246, 25%, 77%);
+.msg, .icon {
+    display: none;
 }
 .para {
-    color: hsl(0, 100%, 74%) ;
+    color: hsl(240, 2%, 12%);
 }
-p, h1 {
-    color: #f1f5f7;
+attribution {
+    color: white;
+}
+.btn {
+    background: hsl(154, 59%, 51%);
+    color: white;
+    border-radius: 5px;
+    font-weight: 400;
+    font-size: 16px;
 }
