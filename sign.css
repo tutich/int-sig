@@ -69,15 +69,25 @@ border-color: #f1f1f1;
 
 .msg {
     color: red;
-}
-.msg, .icon {
+    padding: 0.5rem 0rem 0rem 0rem;
+    text-align: end;
     display: none;
+
 }
 .para {
-    color: hsl(240, 2%, 12%);
+    color: hsl(246, 25%, 77%);
+    margin-top: 1rem;
 }
-attribution {
+a {
+    color: hsl(0, 100%, 74%);
+    font-weight: 600;
+    text-decoration: none;
+}
+.attribution {
     color: white;
+}
+.attribution a {
+    color: hsl(248, 32%, 49%);
 }
 .btn {
     background: hsl(154, 59%, 51%);
@@ -85,4 +95,32 @@ attribution {
     border-radius: 5px;
     font-weight: 400;
     font-size: 16px;
+    margin-bottom: 1rem;
+}
+.icon {
+position: absolute;
+opacity: 0;
+margin: 0.8rem, 0rem, 0rem, -3rem;
+}
+.error input {
+    border: 2px solid hsl(0, 100%, 74%);
+}
+.error input:focus {
+    color: hsl(0, 100%, 74%);
+}
+.error .icon {
+    opacity: 1;
+}
+.error .msg {
+    display: block;
+}
+
+@media screen and (min-width: 992px) {
+    body {
+        display: grid;
+        grid-template-columns: 1fr 1fr ;
+        justify-content: center;
+        height: 100vh;
+        margin: auto;
+    }
 }
